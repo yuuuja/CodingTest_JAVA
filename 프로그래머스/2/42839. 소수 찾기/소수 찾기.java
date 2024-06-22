@@ -3,7 +3,6 @@ class Solution {
     public int solution(String numbers) {
         Set<Integer> set = new HashSet<>();
         int answer = 0;
-        List<String> list = new ArrayList<>();
         permutations("",numbers,set);
         
         for(int num : set){
