@@ -12,7 +12,7 @@ class Solution {
         }
 
         for(int i=0;i<trit.length();i++){
-            answer +=  (int)Math.pow(3,i) * Integer.valueOf(trit.charAt(trit.length()-1-i)-48);
+            answer +=  (int)Math.pow(3,i) * Integer.valueOf(trit.charAt(trit.length()-1-i)-'0');
         }
 
         return answer;
