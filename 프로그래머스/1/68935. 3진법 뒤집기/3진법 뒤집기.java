@@ -3,7 +3,7 @@ class Solution {
         int answer = 0;
         String trit = "";
         while(n != 0){
-            trit += String.valueOf(n%3);
+            trit += n%3;
             n/=3;
             if(n==1){
                 trit+="1";
