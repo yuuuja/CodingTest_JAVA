@@ -17,11 +17,8 @@ class Solution {
         if(cnt_b == max) result.add(2);
         if(cnt_c == max) result.add(3);
         
-        int[] answer = new int[result.size()];
-        for(int i=0; i<result.size();i++){
-            answer[i]=result.get(i);
-        }
-        Arrays.sort(answer);
+        Collections.sort(result);
+        int[] answer = result.stream().mapToInt(i->i).toArray();
         return answer;
     }
 }
