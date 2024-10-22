@@ -2,7 +2,7 @@ import java.util.*;
 class Solution {
     public int[] solution(String[] wallpaper) {
         List<Point> points = new ArrayList<>();
-        int minX=51; int minY=51;
+        int minX=50; int minY=50;
         int maxX=0; int maxY=0;
         
         // 파일 좌표 리스트에 저장
